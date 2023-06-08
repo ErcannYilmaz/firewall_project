@@ -1,0 +1,12 @@
+# dhcpd.conf
+#
+# Sample configuration file for ISC dhcpd
+#
+
+default-lease-time 600;
+max-lease-time 7200;
+
+subnet 192.168.2.0 netmask 255.255.255.0{
+	range 192.168.2.100 192.168.2.200;
+	option routers 192.168.2.1;
+}
